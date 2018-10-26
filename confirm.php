@@ -5,12 +5,12 @@
 
 
 	$id = $_REQUEST['id'];
-	$y = "archive";
+	$y = "yes";
 
 	mysqli_query($con, "UPDATE osams_scholars SET sch_verified='$y' WHERE `sch_no` = $id");
 
 //	$result = mysqli_query($con, $query);
 
- 	header('location:http://bpc-osams.com/osams_records.php'); 
+ 	header('location:http://bpc-osams.com/approved.php'); 
 
 ?>
